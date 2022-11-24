@@ -8,7 +8,7 @@ module counterTB;
 
     initial begin
         clk = 0;
-        reset = 1'b1; 
+        reset = 1'b1;
     end
 
     always begin
@@ -24,6 +24,7 @@ module counterTB;
         #50 up_down = 1'b0;
     end
     initial #100 en = 1'b0;
+    initial begin #150 load = 1'b1; data = 9; end
 endmodule
 
 module internalCalculatorTB;
