@@ -1,0 +1,156 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/laura/Documents/Diogo/SD/Projeto
+T_opt
+!s110 1669297592
+VC0Y8fO<HQiGFDKZDk^<W90
+04 9 4 work counterTB fast 0
+=1-8cb0e92bd15b-637f75b8-dd-2f28
+Z2 !s124 OEM10U2 
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1669301688
+VAEZYaP=9WI<mzaKl5JVo52
+04 20 4 work internalCalculatorTB fast 0
+=1-8cb0e92bd15b-637f85b7-311-1960
+R2
+R3
+R4
+n@_opt1
+R5
+vcounter
+!s110 1669296954
+!i10b 1
+!s100 92HW3BnXGJ>9`:<2bdgI50
+I]:kIZiN>emMeZ]jijnl4]1
+R1
+w1669296949
+8counter.v
+Fcounter.v
+!i122 1
+L0 1 22
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1669296953.000000
+!s107 counter.v|
+!s90 counter.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vcounter_tb
+!s110 1669296934
+!i10b 1
+!s100 UTjaVKTJg3RgN`LDi^_XM1
+IlMN:Kb]lPe^fLn62_7ITP1
+R1
+w1669296804
+Z9 8testbench.v
+Z10 Ftestbench.v
+!i122 0
+L0 2 22
+R6
+R7
+r1
+!s85 0
+31
+!s108 1669296934.000000
+Z11 !s107 testbench.v|
+Z12 !s90 testbench.v|
+!i113 0
+R8
+R4
+vcounterTB
+Z13 !s110 1669301683
+!i10b 1
+!s100 0FEWJWFQ@LmeA1a;N2eZ`1
+IB8]nHIfTKl9:XXQAOoZ7g1
+R1
+Z14 w1669301681
+R9
+R10
+!i122 17
+L0 2 26
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1669301683.000000
+R11
+R12
+!i113 0
+R8
+R4
+ncounter@t@b
+vinternalCalculator
+!s110 1669301271
+!i10b 1
+!s100 Q`>dEB2VZ^IQPT_ZZlOCc1
+I_XMH`Y@b1]Y<BR^>8doDU2
+R1
+w1669301268
+8internalCalculator.v
+FinternalCalculator.v
+!i122 11
+L0 1 28
+R6
+R7
+r1
+!s85 0
+31
+!s108 1669301271.000000
+!s107 internalCalculator.v|
+!s90 internalCalculator.v|
+!i113 0
+R8
+R4
+ninternal@calculator
+vinternalCalculatorTB
+R13
+!i10b 1
+!s100 U7MP<9b?79GN44WHSF2TA3
+IJokS2kj:nVYnR^f`3OXJX2
+R1
+R14
+R9
+R10
+!i122 17
+L0 29 19
+R6
+R7
+r1
+!s85 0
+31
+R15
+R11
+R12
+!i113 0
+R8
+R4
+ninternal@calculator@t@b
