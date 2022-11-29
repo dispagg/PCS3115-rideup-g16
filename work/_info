@@ -12,6 +12,21 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
@@ -23,46 +38,57 @@ Z1 dC:/Users/laura/Documents/Diogo/SD/Projeto
 T_opt
 !s110 1669297592
 VC0Y8fO<HQiGFDKZDk^<W90
-04 9 4 work counterTB fast 0
+Z2 04 9 4 work counterTB fast 0
 =1-8cb0e92bd15b-637f75b8-dd-2f28
-Z2 !s124 OEM10U2 
-Z3 o-quiet -auto_acc_if_foreign -work work
-Z4 tCvgOpt 0
+Z3 !s124 OEM10U2 
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
 n@_opt
-Z5 OL;O;2021.2;73
+Z6 OL;O;2021.2;73
 R1
 T_opt1
 !s110 1669301688
 VAEZYaP=9WI<mzaKl5JVo52
 04 20 4 work internalCalculatorTB fast 0
 =1-8cb0e92bd15b-637f85b7-311-1960
-R2
 R3
 R4
-n@_opt1
 R5
-vcounter
-!s110 1669296954
-!i10b 1
-!s100 92HW3BnXGJ>9`:<2bdgI50
-I]:kIZiN>emMeZ]jijnl4]1
+n@_opt1
+R6
 R1
-w1669296949
-8counter.v
-Fcounter.v
-!i122 1
-L0 1 22
-Z6 VDg1SIo80bB@j0V0VzS_@n1
-Z7 OL;L;2021.2;73
+T_opt6
+!s110 1669746078
+VToAom1ZSH7=k1ABg@H9zC0
+R2
+=1-8cb0e92bd15b-63864d9d-308-29e0
+R3
+R4
+R5
+n@_opt6
+R6
+vcounter
+!s110 1669746072
+!i10b 1
+!s100 >bKcR3SCRlWZmJlN7kRFB1
+IK`8><N^OFQCF?abkKR5fZ3
+R1
+w1669690880
+8src/counter.v
+Fsrc/counter.v
+!i122 45
+Z7 L0 1 28
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1669296953.000000
-!s107 counter.v|
-!s90 counter.v|
+!s108 1669746072.000000
+!s107 src/counter.v|
+!s90 src/counter.v|
 !i113 0
-Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
 vcounter_tb
 !s110 1669296934
 !i10b 1
@@ -70,87 +96,178 @@ vcounter_tb
 IlMN:Kb]lPe^fLn62_7ITP1
 R1
 w1669296804
-Z9 8testbench.v
-Z10 Ftestbench.v
+Z11 8testbench.v
+Z12 Ftestbench.v
 !i122 0
 L0 2 22
-R6
-R7
+R8
+R9
 r1
 !s85 0
 31
 !s108 1669296934.000000
-Z11 !s107 testbench.v|
-Z12 !s90 testbench.v|
+Z13 !s107 testbench.v|
+Z14 !s90 testbench.v|
 !i113 0
-R8
-R4
-vcounterTB
-Z13 !s110 1669301683
-!i10b 1
-!s100 0FEWJWFQ@LmeA1a;N2eZ`1
-IB8]nHIfTKl9:XXQAOoZ7g1
-R1
-Z14 w1669301681
-R9
 R10
-!i122 17
-L0 2 26
-R6
-R7
+R5
+vcounterTB
+Z15 !s110 1669743794
+!i10b 1
+!s100 <KQUX0_9Hd9J3H>ifY=Fz2
+IN=domJa8cB04zRFa2E:=`0
+R1
+Z16 w1669743561
+R11
+R12
+!i122 36
+L0 2 27
+R8
+R9
 r1
 !s85 0
 31
-Z15 !s108 1669301683.000000
-R11
-R12
+Z17 !s108 1669743794.000000
+R13
+R14
 !i113 0
-R8
-R4
+R10
+R5
 ncounter@t@b
 vinternalCalculator
-!s110 1669301271
+!s110 1669303931
 !i10b 1
 !s100 Q`>dEB2VZ^IQPT_ZZlOCc1
-I_XMH`Y@b1]Y<BR^>8doDU2
+IDBK0`93JgKoQ3BFZo`2e81
 R1
 w1669301268
-8internalCalculator.v
-FinternalCalculator.v
-!i122 11
-L0 1 28
-R6
+8src/internalCalculator.v
+Fsrc/internalCalculator.v
+!i122 18
 R7
+R8
+R9
 r1
 !s85 0
 31
-!s108 1669301271.000000
-!s107 internalCalculator.v|
-!s90 internalCalculator.v|
+!s108 1669303931.000000
+!s107 src/internalCalculator.v|
+!s90 src/internalCalculator.v|
 !i113 0
-R8
-R4
+R10
+R5
 ninternal@calculator
 vinternalCalculatorTB
-R13
+R15
 !i10b 1
-!s100 U7MP<9b?79GN44WHSF2TA3
-IJokS2kj:nVYnR^f`3OXJX2
+!s100 M4o9EB=GaR;>RBTUf7YzB1
+I:D_c7IIEkjO_i<>6_PigZ3
 R1
-R14
+R16
+R11
+R12
+!i122 36
+L0 30 18
+R8
 R9
-R10
-!i122 17
-L0 29 19
-R6
-R7
 r1
 !s85 0
 31
+R17
+R13
+R14
+!i113 0
+R10
+R5
+ninternal@calculator@t@b
+vprioritizer
+!s110 1669744479
+!i10b 1
+!s100 WVL2F0J2==`@dTJ7Qf5J:1
+I>TiQz8WWJ5TY^ddXGD8283
+R1
+w1669744463
+8src/prioritizer.v
+Fsrc/prioritizer.v
+!i122 44
+L0 1 60
+R8
+R9
+r1
+!s85 0
+31
+!s108 1669744479.000000
+!s107 src/prioritizer.v|
+!s90 src/prioritizer.v|
+!i113 0
+R10
+R5
+vprioritizerTB
 R15
+!i10b 1
+!s100 YImJ4II;9:jjGBfJ[40o^1
+Ib8_0oMiiJm4JF2o5<l4C?3
+R1
+R16
 R11
 R12
-!i113 0
+!i122 36
+L0 66 17
 R8
-R4
-ninternal@calculator@t@b
+R9
+r1
+!s85 0
+31
+R17
+R13
+R14
+!i113 0
+R10
+R5
+nprioritizer@t@b
+vsevenSegment
+!s110 1669304528
+!i10b 1
+!s100 =il66D8>;YP7j]3oh_2TT3
+I@<k`?@5ADP_1<Nzm:mk1@2
+R1
+w1669303671
+8src/sevenSegment.v
+Fsrc/sevenSegment.v
+!i122 26
+L0 1 31
+R8
+R9
+r1
+!s85 0
+31
+!s108 1669304528.000000
+!s107 src/sevenSegment.v|
+!s90 src/sevenSegment.v|
+!i113 0
+R10
+R5
+nseven@segment
+vsevenSegmentTB
+R15
+!i10b 1
+!s100 5iZ63FAUkRT8cJoH:24SP0
+I`D2[56NlHePFE@[J55Yf60
+R1
+R16
+R11
+R12
+!i122 36
+L0 49 16
+R8
+R9
+r1
+!s85 0
+31
+R17
+R13
+R14
+!i113 0
+R10
+R5
+nseven@segment@t@b

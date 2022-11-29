@@ -14,9 +14,15 @@ always @(posedge clk) begin
         count <= data;
     else if (en)
         if (up_down)
-            count <= count + 1;
+            if (count < 9)
+                count <= count + 1;
+            else 
+                count <= 0;
         else 
-            count <= count - 1;
+            if (count > 0)
+                count <= count - 1;
+            else
+                count <= 9;
 end
     
 endmodule

@@ -4,7 +4,7 @@ module counterTB;
     reg [3:0] data;
     wire [3:0] count;
 
-    counter ct1(.*);
+    counter uut(.*);
 
     initial begin
         clk = 0;
@@ -31,7 +31,7 @@ module internalCalculatorTB;
     reg [3:0] F, C;
     wire en, up_down;
 
-    internalCalculator ic1(.*);
+    internalCalculator uut(.*);
 
     integer i, j;
 
@@ -43,6 +43,41 @@ module internalCalculatorTB;
                 $display("current floor: %d, desired floor: %d, en: %1b, up: %1b", C, F, en, up_down);
             end
         end
+    end
+endmodule
+
+module sevenSegmentTB ;
+    reg [3:0] Num;
+    wire [9:0] seg;
+
+    sevenSegment uut(.floor(Num), .seg(seg));
+
+    integer i;
+    initial begin
+        for (i = 0; i <= 9 ; i = i+1) begin
+            Num = i;
+            #1
+            $display("current floor: %d, output %b", Num, seg);
+        end
+    end
+
+endmodule
+
+module prioritizerTB ;
+    reg [5:0] stateA, stateB, stateC;
+    reg [3:0] obj;
+    wire A, B, C;
+
+    prioritizer uut (.*);
+
+    initial begin
+        obj = 7;
+        stateA = 6'b001011;
+        stateB = 6'b001001;
+        stateC = 6'b011000;
+        #1;
+        $display("A = %b, B = %b, C = %b", A, B, C);
+        
     end
 
 endmodule
