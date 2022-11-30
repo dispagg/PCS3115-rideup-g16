@@ -107,11 +107,17 @@ module controlUnitTB;
     controlUnit uut (.clk(clk), .obj(obj), .insideA(insideA), .insideB(insideB), .insideC(insideC),
     .displayA(displayA), .displayB(displayB), .displayC(displayC));
 
+
+    // AJUSTAR OS PARÂMETROS A PARTIR DAQUI
     initial begin
+        // CONFIGURAÇÃO INICIAL
         #2 objFloorA = 9; #2 objFloorB = 9; #2 objFloorC = 9;
+
+        // SEQUÊNCIA DE ACONTECIMENTOS
         #20 objFloorB = 0;
         #20 objFloorA = 0;
-        #2 objFloorA = 5; objFloorB = 5;
+        #2 objFloorA = 5; 
+        objFloorB = 5;
         #2 obj = 0;
         #20 objFloorC = 0;
     end
