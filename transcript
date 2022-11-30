@@ -1,6 +1,16 @@
-# vsim -c work.counterTB 
-# Start time: 15:21:17 on Nov 29,2022
+# vsim -c work.controlUnitTB 
+# Start time: 02:20:56 on Nov 30,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: controlUnit.v(25): (vopt-2685) [TFMPC] - Too few port connections for 'counterA'.  Expected 6, found 4.
+# ** Warning: controlUnit.v(25): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
+# ** Warning: controlUnit.v(25): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
+# ** Warning: controlUnit.v(26): (vopt-2685) [TFMPC] - Too few port connections for 'counterB'.  Expected 6, found 4.
+# ** Warning: controlUnit.v(26): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
+# ** Warning: controlUnit.v(26): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
+# ** Warning: controlUnit.v(27): (vopt-2685) [TFMPC] - Too few port connections for 'counterC'.  Expected 6, found 4.
+# ** Warning: controlUnit.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
+# ** Warning: controlUnit.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=9.
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
 # //
@@ -15,106 +25,104 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Loading work.counterTB(fast)
-# time=2,reset=1,load=x,ud=x,data= x,count= 0
-# time=4,reset=0,load=x,ud=x,data= x,count= 0
-# time=6,reset=0,load=x,ud=1,data= x,count= 1
-# time=8,reset=0,load=x,ud=1,data= x,count= 2
-# time=10,reset=0,load=x,ud=1,data= x,count= 3
-# time=12,reset=0,load=x,ud=1,data= x,count= 4
-# time=14,reset=0,load=x,ud=1,data= x,count= 5
-# time=16,reset=0,load=x,ud=1,data= x,count= 6
-# time=18,reset=0,load=x,ud=1,data= x,count= 7
-# time=20,reset=0,load=x,ud=1,data= x,count= 8
-# time=22,reset=0,load=x,ud=1,data= x,count= 9
-# time=24,reset=0,load=x,ud=1,data= x,count= 0
-# time=26,reset=0,load=x,ud=1,data= x,count= 1
-# time=28,reset=0,load=x,ud=1,data= x,count= 2
-# time=30,reset=0,load=x,ud=1,data= x,count= 3
-# time=32,reset=0,load=x,ud=1,data= x,count= 4
-# time=34,reset=0,load=x,ud=1,data= x,count= 5
-# time=36,reset=0,load=x,ud=1,data= x,count= 6
-# time=38,reset=0,load=x,ud=1,data= x,count= 7
-# time=40,reset=0,load=x,ud=1,data= x,count= 8
-# time=42,reset=0,load=x,ud=1,data= x,count= 9
-# time=44,reset=0,load=x,ud=1,data= x,count= 0
-# time=46,reset=0,load=x,ud=1,data= x,count= 1
-# time=48,reset=0,load=x,ud=1,data= x,count= 2
-# time=50,reset=0,load=x,ud=1,data= x,count= 3
-# time=52,reset=0,load=x,ud=1,data= x,count= 4
-# time=54,reset=0,load=x,ud=1,data= x,count= 5
-# time=56,reset=0,load=x,ud=0,data= x,count= 4
-# time=58,reset=0,load=x,ud=0,data= x,count= 3
-# time=60,reset=0,load=x,ud=0,data= x,count= 2
-# time=62,reset=0,load=x,ud=0,data= x,count= 1
-# time=64,reset=0,load=x,ud=0,data= x,count= 0
-# time=66,reset=0,load=x,ud=0,data= x,count= 9
-# time=68,reset=0,load=x,ud=0,data= x,count= 8
-# time=70,reset=0,load=x,ud=0,data= x,count= 7
-# time=72,reset=0,load=x,ud=0,data= x,count= 6
-# time=74,reset=0,load=x,ud=0,data= x,count= 5
-# time=76,reset=0,load=x,ud=0,data= x,count= 4
-# time=78,reset=0,load=x,ud=0,data= x,count= 3
-# time=80,reset=0,load=x,ud=0,data= x,count= 2
-# time=82,reset=0,load=x,ud=0,data= x,count= 1
-# time=84,reset=0,load=x,ud=0,data= x,count= 0
-# time=86,reset=0,load=x,ud=0,data= x,count= 9
-# time=88,reset=0,load=x,ud=0,data= x,count= 8
-# time=90,reset=0,load=x,ud=0,data= x,count= 7
-# time=92,reset=0,load=x,ud=0,data= x,count= 6
-# time=94,reset=0,load=x,ud=0,data= x,count= 5
-# time=96,reset=0,load=x,ud=0,data= x,count= 4
-# time=98,reset=0,load=x,ud=0,data= x,count= 3
-# time=100,reset=0,load=x,ud=0,data= x,count= 2
-# time=102,reset=0,load=x,ud=0,data= x,count= 2
-# time=104,reset=0,load=x,ud=0,data= x,count= 2
-# time=106,reset=0,load=x,ud=0,data= x,count= 2
-# time=108,reset=0,load=x,ud=0,data= x,count= 2
-# time=110,reset=0,load=x,ud=0,data= x,count= 2
-# time=112,reset=0,load=x,ud=0,data= x,count= 2
-# time=114,reset=0,load=x,ud=0,data= x,count= 2
-# time=116,reset=0,load=x,ud=0,data= x,count= 2
-# time=118,reset=0,load=x,ud=0,data= x,count= 2
-# time=120,reset=0,load=x,ud=0,data= x,count= 2
-# time=122,reset=0,load=x,ud=0,data= x,count= 2
-# time=124,reset=0,load=x,ud=0,data= x,count= 2
-# time=126,reset=0,load=x,ud=0,data= x,count= 2
-# time=128,reset=0,load=x,ud=0,data= x,count= 2
-# time=130,reset=0,load=x,ud=0,data= x,count= 2
-# time=132,reset=0,load=x,ud=0,data= x,count= 2
-# time=134,reset=0,load=x,ud=0,data= x,count= 2
-# time=136,reset=0,load=x,ud=0,data= x,count= 2
-# time=138,reset=0,load=x,ud=0,data= x,count= 2
-# time=140,reset=0,load=x,ud=0,data= x,count= 2
-# time=142,reset=0,load=x,ud=0,data= x,count= 2
-# time=144,reset=0,load=x,ud=0,data= x,count= 2
-# time=146,reset=0,load=x,ud=0,data= x,count= 2
-# time=148,reset=0,load=x,ud=0,data= x,count= 2
-# time=150,reset=0,load=1,ud=0,data= 9,count= 2
-# time=152,reset=0,load=1,ud=0,data= 9,count= 9
-# time=154,reset=0,load=1,ud=0,data= 9,count= 9
-# time=156,reset=0,load=1,ud=0,data= 9,count= 9
-# time=158,reset=0,load=1,ud=0,data= 9,count= 9
-# time=160,reset=0,load=1,ud=0,data= 9,count= 9
-# time=162,reset=0,load=1,ud=0,data= 9,count= 9
-# time=164,reset=0,load=1,ud=0,data= 9,count= 9
-# time=166,reset=0,load=1,ud=0,data= 9,count= 9
-# time=168,reset=0,load=1,ud=0,data= 9,count= 9
-# time=170,reset=0,load=1,ud=0,data= 9,count= 9
-# time=172,reset=0,load=1,ud=0,data= 9,count= 9
-# time=174,reset=0,load=1,ud=0,data= 9,count= 9
-# time=176,reset=0,load=1,ud=0,data= 9,count= 9
-# time=178,reset=0,load=1,ud=0,data= 9,count= 9
-# time=180,reset=0,load=1,ud=0,data= 9,count= 9
-# time=182,reset=0,load=1,ud=0,data= 9,count= 9
-# time=184,reset=0,load=1,ud=0,data= 9,count= 9
-# time=186,reset=0,load=1,ud=0,data= 9,count= 9
-# time=188,reset=0,load=1,ud=0,data= 9,count= 9
-# time=190,reset=0,load=1,ud=0,data= 9,count= 9
-# time=192,reset=0,load=1,ud=0,data= 9,count= 9
-# time=194,reset=0,load=1,ud=0,data= 9,count= 9
-# time=196,reset=0,load=1,ud=0,data= 9,count= 9
-# time=198,reset=0,load=1,ud=0,data= 9,count= 9
-# time=200,reset=0,load=1,ud=0,data= 9,count= 9
-# End time: 15:24:41 on Nov 29,2022, Elapsed time: 0:03:24
-# Errors: 0, Warnings: 0
+# Loading work.controlUnitTB(fast)
+# A =  0, B =  0, C =  0
+# A =  0, B =  0, C =  0
+# A =  0, B =  0, C =  0
+# A =  1, B =  0, C =  0
+# A =  1, B =  0, C =  0
+# A =  2, B =  0, C =  0
+# A =  2, B =  0, C =  0
+# A =  3, B =  0, C =  0
+# A =  3, B =  0, C =  0
+# A =  4, B =  0, C =  0
+# A =  4, B =  0, C =  0
+# A =  5, B =  0, C =  0
+# A =  5, B =  0, C =  0
+# A =  6, B =  0, C =  0
+# A =  6, B =  0, C =  0
+# A =  7, B =  0, C =  0
+# A =  7, B =  0, C =  0
+# A =  8, B =  0, C =  0
+# A =  8, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  0, C =  0
+# A =  9, B =  1, C =  0
+# A =  9, B =  1, C =  0
+# A =  9, B =  2, C =  0
+# A =  9, B =  2, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  9, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  0
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1
+# A =  8, B =  3, C =  1

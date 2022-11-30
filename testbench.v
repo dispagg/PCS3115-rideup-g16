@@ -73,11 +73,41 @@ module prioritizerTB ;
     initial begin
         obj = 7;
         stateA = 6'b001011;
-        stateB = 6'b001001;
-        stateC = 6'b011000;
-        #1;
-        $display("A = %b, B = %b, C = %b", A, B, C);
-        
+        stateB = 6'b001000;
+        stateC = 6'b000000;
+        #1 $display("A = %b, B = %b, C = %b", A, B, C);
+    end
+endmodule
+
+module controlUnitTB;
+    reg clk;
+    reg [3:0] obj;
+    wire [5:0] stateA, stateB, stateC;
+
+    initial begin
+        clk = 0;
     end
 
+    always begin
+        #1 clk = ~clk;
+    end
+
+    always #1 $display("A = %d, B = %d, C = %d", stateA[5:2], stateB[5:2], stateC[5:2]);
+
+    controlUnit uut (.clk(clk), .obj(obj),
+    .stateFloorA(stateA), .stateFloorB(stateB), .stateFloorC(stateC));
+
+    initial begin
+        obj = 0;
+        #2 obj = 9;
+        #10 obj = 7; 
+        // #5 obj = 3;
+        // #7 obj = 0;
+        #17 obj = 3;
+        #18 obj = 8;
+        #10 obj = 1;
+    end
+
+
+    
 endmodule

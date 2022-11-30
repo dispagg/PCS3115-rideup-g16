@@ -1,16 +1,17 @@
 module counter (
-    clk, en, reset, up_down, load, data, count
+    clk, en, up_down, load, data, count
 );
 
-input clk, en, reset, load, up_down;
+input clk, en, load, up_down;
 input [3:0] data;
 
 output reg [3:0] count;
 
+initial count = 0;
+
 always @(posedge clk) begin
-    if (reset)
-        count <= 0;
-    else if (load)
+    // $display(en);s
+    if (load)
         count <= data;
     else if (en)
         if (up_down)
