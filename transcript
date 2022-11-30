@@ -1,16 +1,22 @@
 # vsim -c work.controlUnitTB 
-# Start time: 02:20:56 on Nov 30,2022
+# Start time: 14:52:33 on Nov 30,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: controlUnit.v(25): (vopt-2685) [TFMPC] - Too few port connections for 'counterA'.  Expected 6, found 4.
-# ** Warning: controlUnit.v(25): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
-# ** Warning: controlUnit.v(25): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
-# ** Warning: controlUnit.v(26): (vopt-2685) [TFMPC] - Too few port connections for 'counterB'.  Expected 6, found 4.
+# ** Warning: testbench.v(107): (vopt-2241) Connection width does not match width of port 'displayA'. The port definition is at: controlUnit.v(4).
+# ** Warning: testbench.v(107): (vopt-2241) Connection width does not match width of port 'displayB'. The port definition is at: controlUnit.v(4).
+# ** Warning: testbench.v(107): (vopt-2241) Connection width does not match width of port 'displayC'. The port definition is at: controlUnit.v(4).
+# ** Warning: testbench.v(95): (vopt-2241) Connection width does not match width of port 'display'. The port definition is at: utils.v(1).
+# ** Warning: testbench.v(94): (vopt-2241) Connection width does not match width of port 'display'. The port definition is at: utils.v(1).
+# ** Warning: testbench.v(93): (vopt-2241) Connection width does not match width of port 'display'. The port definition is at: utils.v(1).
+# ** Warning: controlUnit.v(26): (vopt-2685) [TFMPC] - Too few port connections for 'counterA'.  Expected 6, found 4.
 # ** Warning: controlUnit.v(26): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
 # ** Warning: controlUnit.v(26): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
-# ** Warning: controlUnit.v(27): (vopt-2685) [TFMPC] - Too few port connections for 'counterC'.  Expected 6, found 4.
+# ** Warning: controlUnit.v(27): (vopt-2685) [TFMPC] - Too few port connections for 'counterB'.  Expected 6, found 4.
 # ** Warning: controlUnit.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
 # ** Warning: controlUnit.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=9.
+# ** Warning: controlUnit.v(28): (vopt-2685) [TFMPC] - Too few port connections for 'counterC'.  Expected 6, found 4.
+# ** Warning: controlUnit.v(28): (vopt-2718) [TFMPC] - Missing connection for port 'data'.
+# ** Warning: controlUnit.v(28): (vopt-2718) [TFMPC] - Missing connection for port 'load'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=15.
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
 # //
@@ -27,102 +33,36 @@
 # //
 # Loading work.controlUnitTB(fast)
 # A =  0, B =  0, C =  0
-# A =  0, B =  0, C =  0
-# A =  0, B =  0, C =  0
 # A =  1, B =  0, C =  0
-# A =  1, B =  0, C =  0
-# A =  2, B =  0, C =  0
-# A =  2, B =  0, C =  0
-# A =  3, B =  0, C =  0
-# A =  3, B =  0, C =  0
-# A =  4, B =  0, C =  0
-# A =  4, B =  0, C =  0
-# A =  5, B =  0, C =  0
-# A =  5, B =  0, C =  0
-# A =  6, B =  0, C =  0
-# A =  6, B =  0, C =  0
-# A =  7, B =  0, C =  0
-# A =  7, B =  0, C =  0
-# A =  8, B =  0, C =  0
-# A =  8, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  0, C =  0
-# A =  9, B =  1, C =  0
-# A =  9, B =  1, C =  0
-# A =  9, B =  2, C =  0
-# A =  9, B =  2, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  9, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  0
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
-# A =  8, B =  3, C =  1
+# A =  2, B =  1, C =  0
+# A =  3, B =  2, C =  1
+# A =  4, B =  3, C =  2
+# A =  5, B =  4, C =  3
+# A =  6, B =  5, C =  4
+# A =  7, B =  6, C =  5
+# A =  8, B =  7, C =  6
+# A =  9, B =  8, C =  7
+# A =  9, B =  9, C =  8
+# A =  9, B =  9, C =  9
+# A =  9, B =  8, C =  9
+# A =  9, B =  7, C =  9
+# A =  9, B =  6, C =  9
+# A =  9, B =  5, C =  9
+# A =  9, B =  4, C =  9
+# A =  9, B =  3, C =  9
+# A =  9, B =  2, C =  9
+# A =  9, B =  1, C =  9
+# A =  9, B =  0, C =  9
+# A =  8, B =  0, C =  9
+# A =  7, B =  1, C =  9
+# A =  6, B =  2, C =  9
+# A =  5, B =  3, C =  9
+# A =  4, B =  4, C =  9
+# A =  3, B =  5, C =  9
+# A =  2, B =  5, C =  9
+# A =  1, B =  5, C =  9
+# A =  0, B =  5, C =  9
+# A =  0, B =  5, C =  0
+# invalid command name "quir"
+# End time: 14:54:32 on Nov 30,2022, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 15

@@ -49,6 +49,27 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
@@ -69,34 +90,34 @@ n@_opt
 Z4 OL;O;2021.2;73
 R1
 T_opt1
-!s110 1669785656
-VCWVD<Acf8YVmgN=FI7B5A2
+!s110 1669830754
+VNT@<1P65EKA:@BVUX_UXN3
 04 13 4 work controlUnitTB fast 0
-=1-8cb0e92bd15b-6386e838-2b3-2220
-!s124 OEM10U6 
+=1-8cb0e92bd15b-63879861-2e5-25f8
+!s124 OEM10U18 
 R2
 R3
 n@_opt1
 R4
 vcontrolUnit
-Z5 !s110 1669785652
+Z5 !s110 1669830748
 !i10b 1
-!s100 U`cB[0@:1IO0YWKHm<z9K0
-In[L;>WSBllJllVZP][znL2
+!s100 go<G9f7mN;m@WUBom2ln?1
+IghfT:SnM5=0P^6DQz5LfZ0
 R1
-w1669785182
+w1669829670
 8controlUnit.v
 FcontrolUnit.v
-!i122 59
-L0 2 73
+!i122 95
+L0 2 78
 Z6 VDg1SIo80bB@j0V0VzS_@n1
 Z7 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z8 !s108 1669785652.000000
-Z9 !s107 testbench.v|sevenSegment.v|registerCurrent.v|prioritizer.v|counter.v|controlUnit.v|
-Z10 !s90 controlUnit.v|counter.v|prioritizer.v|registerCurrent.v|sevenSegment.v|testbench.v|
+Z8 !s108 1669830748.000000
+Z9 !s107 utils.v|testbench.v|sevenSegment.v|prioritizer.v|floorEncoder.v|counter.v|controlUnit.v|
+Z10 !s90 controlUnit.v|counter.v|floorEncoder.v|prioritizer.v|sevenSegment.v|testbench.v|utils.v|
 !i113 0
 Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R3
@@ -104,14 +125,14 @@ ncontrol@unit
 vcontrolUnitTB
 R5
 !i10b 1
-!s100 >UmQAjX6V3Snlz4ZzRo_m2
-I19IEAHCON8nO9M<L425M73
+!s100 ecd`7I_zZf=1Od:oFBTKZ3
+IWeK8?caRdIdb]b8l9N5P50
 R1
-Z12 w1669785648
+Z12 w1669830744
 Z13 8testbench.v
 Z14 Ftestbench.v
-!i122 59
-L0 82 32
+!i122 95
+L0 82 40
 R6
 R7
 r1
@@ -130,10 +151,10 @@ R5
 !s100 WJKlDj2hCFBZf5M]:HKG03
 IlBUZ32V]Q]ZmgGYnFH;EU0
 R1
-w1669784668
+w1669786176
 8counter.v
 Fcounter.v
-!i122 59
+!i122 95
 L0 1 29
 R6
 R7
@@ -155,7 +176,7 @@ R1
 R12
 R13
 R14
-!i122 59
+!i122 95
 L0 2 27
 R6
 R7
@@ -169,6 +190,75 @@ R10
 R11
 R3
 ncounter@t@b
+vdisplayEncoder
+R5
+!i10b 1
+!s100 =W1aCm8NX:B72YWF@`>JX1
+IRC<MK]oRTHcX8o0znieXX1
+R1
+Z15 w1669828758
+Z16 8utils.v
+Z17 Futils.v
+!i122 95
+L0 1 20
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+ndisplay@encoder
+vfloorDecoder
+R5
+!i10b 1
+!s100 Rn?3>:7fIFEULVdmo47[T0
+I66<V]IX:XHX?LBeEE0ESR2
+R1
+R15
+R16
+R17
+!i122 95
+L0 22 22
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+nfloor@decoder
+vfloorEncoder
+R5
+!i10b 1
+!s100 oa<ld4aKL7bg15Vlj4TCS1
+IzllW]@J6GaFEe3jT6akf03
+R1
+w1669828773
+8floorEncoder.v
+FfloorEncoder.v
+!i122 95
+L0 1 23
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+nfloor@encoder
 vinternalCalculatorTB
 R5
 !i10b 1
@@ -178,7 +268,7 @@ R1
 R12
 R13
 R14
-!i122 59
+!i122 95
 L0 30 18
 R6
 R7
@@ -201,7 +291,7 @@ R1
 w1669785516
 8prioritizer.v
 Fprioritizer.v
-!i122 59
+!i122 95
 L0 1 54
 R6
 R7
@@ -223,7 +313,7 @@ R1
 R12
 R13
 R14
-!i122 59
+!i122 95
 L0 66 15
 R6
 R7
@@ -238,7 +328,7 @@ R11
 R3
 nprioritizer@t@b
 vregisterCurrent
-R5
+!s110 1669785652
 !i10b 1
 !s100 :mRX7AG6IQON[cUGL^C>o0
 I[N5g^7zA1Z50iZL3RWQX`1
@@ -253,9 +343,9 @@ R7
 r1
 !s85 0
 31
-R8
-R9
-R10
+!s108 1669785652.000000
+!s107 testbench.v|sevenSegment.v|registerCurrent.v|prioritizer.v|counter.v|controlUnit.v|
+!s90 controlUnit.v|counter.v|prioritizer.v|registerCurrent.v|sevenSegment.v|testbench.v|
 !i113 0
 R11
 R3
@@ -269,7 +359,7 @@ R1
 w1669303671
 8sevenSegment.v
 FsevenSegment.v
-!i122 59
+!i122 95
 L0 1 31
 R6
 R7
@@ -292,7 +382,7 @@ R1
 R12
 R13
 R14
-!i122 59
+!i122 95
 L0 49 16
 R6
 R7

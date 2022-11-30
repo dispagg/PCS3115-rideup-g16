@@ -81,31 +81,39 @@ endmodule
 
 module controlUnitTB;
     reg clk;
+    // inputs de usuário
     reg [3:0] obj;
-    wire [5:0] stateA, stateB, stateC;
+    reg [3:0] objFloorA, objFloorB, objFloorC;
 
-    initial begin
-        clk = 0;
+    wire [9:0] displayA, displayB, displayC;
+    wire [9:0] insideA, insideB, insideC;
+    wire [3:0] stateA, stateB, stateC;
+
+    // utils
+        displayEncoder ssEncoderA (.display(displayA), .floor(stateA));
+        displayEncoder ssEncoderB (.display(displayB), .floor(stateB));
+        displayEncoder ssEncoderC (.display(displayC), .floor(stateC));
+
+        floorDecoder fsA (.floor(objFloorA), .inside(insideA));
+        floorDecoder fsB (.floor(objFloorB), .inside(insideB));
+        floorDecoder fsC (.floor(objFloorC), .inside(insideC));
+
+    initial clk = 0; always #1 clk = ~clk;    
+
+    always @(displayA or displayB or displayC) begin
+        $display("A = %d, B = %d, C = %d", stateA, stateB, stateC);
     end
 
-    always begin
-        #1 clk = ~clk;
-    end
-
-    always #1 $display("A = %d, B = %d, C = %d", stateA[5:2], stateB[5:2], stateC[5:2]);
-
-    controlUnit uut (.clk(clk), .obj(obj),
-    .stateFloorA(stateA), .stateFloorB(stateB), .stateFloorC(stateC));
+    controlUnit uut (.clk(clk), .obj(obj), .insideA(insideA), .insideB(insideB), .insideC(insideC),
+    .displayA(displayA), .displayB(displayB), .displayC(displayC));
 
     initial begin
-        obj = 0;
-        #2 obj = 9;
-        #10 obj = 7; 
-        // #5 obj = 3;
-        // #7 obj = 0;
-        #17 obj = 3;
-        #18 obj = 8;
-        #10 obj = 1;
+        #2 objFloorA = 9; #2 objFloorB = 9; #2 objFloorC = 9;
+        #20 objFloorB = 0;
+        #20 objFloorA = 0;
+        #2 objFloorA = 5; objFloorB = 5;
+        #2 obj = 0;
+        #20 objFloorC = 0;
     end
 
 
