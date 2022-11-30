@@ -1,7 +1,7 @@
 module counter (
     clk, en, up_down, load, data, count
 );
-
+// contador simples de 4 bits e up_down;
 input clk, en, load, up_down;
 input [3:0] data;
 

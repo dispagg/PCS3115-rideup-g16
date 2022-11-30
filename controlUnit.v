@@ -5,6 +5,7 @@ module controlUnit (
 );
     input clk;
     input [3:0] obj;
+    input [9:0] insideA, insideB, insideC;
 
     output reg [5:0] stateFloorA;
     output reg [5:0] stateFloorB;
@@ -16,9 +17,7 @@ module controlUnit (
 
     reg [3:0] objA, objB, objC;
 
-    wire setFloorStateA, setMemoryA; 
-    wire setFloorStateB, setMemoryB; 
-    wire setFloorStateC, setMemoryC; 
+    wire setMemoryA, setMemoryB, setMemoryC; 
 
     prioritizer up1 ( .stateA(stateFloorA), .stateB(stateFloorB), .stateC(stateFloorC),
     .obj(obj), .A(setMemoryA), .B(setMemoryB), .C(setMemoryC));
@@ -36,11 +35,13 @@ module controlUnit (
         countA or countB or countC
     )
     begin
-        // passa para o registrador o andar em que o elevador se encontra
+        // passa para o output o andar em que o elevador se encontra
         stateFloorA[5:2] = countA;
         stateFloorB[5:2] = countB;
         stateFloorC[5:2] = countC;
     end
+
+    // Para A, B e C, são usados comparadores de 4 bits que comparam sua posição ao seu objetivo;
 
     always @(posedge setMemoryA) objA <= obj;
 
